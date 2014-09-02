@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First JavaScript</h1>
+
+<p>Click Date to display current day, date, and time.</p>
+
+<button type="button" onclick="myFunction()">Date</button>
+
+<p>Click Counter to display current count.</p>
+
+<button type="button" onclick="counter()">Counter</button>
+
+<p id="demo"></p>
+<p id="counter1"></p>
+<p id="counter2"></p>
+<p id="counter3"></p>
+<p id="counter5"></p>
+<p id="counter71"></p>
+
+<script>
+function myFunction() {
+	document.getElementById("demo").innerHTML = Date();
+}
+</script>
+
+<script>
+var count1 = 0
+var count2 = 0
+var count3 = 0
+var count5 = 0
+var count71 = 0
+function counter() {
+	count1 = count1 + 1
+	count2 = count2 + 2
+	count3 = count3 + 3
+	count5 = count5 + 5
+	count71 = count71 + 71
+	document.getElementById("counter1").innerHTML = count1;
+	document.getElementById("counter2").innerHTML = count2;
+	document.getElementById("counter3").innerHTML = count3;
+	document.getElementById("counter5").innerHTML = count5;
+	document.getElementById("counter71").innerHTML = count71;
+}
+</script>
+
+</body>
+</html> 
